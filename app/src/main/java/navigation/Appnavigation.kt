@@ -11,6 +11,7 @@ import cart.CartScreen
 import com.example.shilpa_kala.model.Product
 import com.example.shilpa_kala.screens.*
 import com.example.shilpa_kala.screens.LoginScreen
+import com.example.shilpa_kala.screens.HeritageScreen
 
 @Composable
 fun AppNavigation() {
@@ -137,6 +138,11 @@ fun AppNavigation() {
                         selectedProduct = product
 
                         navController.navigate("product")
+                    },
+
+                    onHeritageClick = {
+
+                        navController.navigate("heritage")
                     }
                 )
             }
